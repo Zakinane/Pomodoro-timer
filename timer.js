@@ -69,3 +69,4 @@ stopStart.addEventListener("click", () => {
     time = setTime;
   }
 });
+ 
