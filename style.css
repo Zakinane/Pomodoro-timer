@@ -14,7 +14,7 @@ body {
   overflow: hidden;
   margin: 20px 0px;
   height: max(475px,100%);
-  width: max(325px,100%);
+  width: max(320px,100%);
   display: flex;
   align-content: center;
   flex-wrap: wrap;

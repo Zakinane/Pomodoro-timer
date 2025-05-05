@@ -2,6 +2,8 @@ let skip = document.querySelector(".skip");
 let stopStart = document.querySelector(".pause-start");
 let timer = document.querySelector(".timer");
 let progressBar = document.getElementById("progress-bar");
+let audio = new Audio("./audio/Reveil electronique.mp3");
+
 
 let rawInput = parseInt(prompt("Durée en secondes (max 5999) :"));
 let setTime = Math.min(rawInput, 5999);
@@ -33,6 +35,7 @@ function startTimer() {
     } else {
       stopStart.textContent = "Reset";
       skip.style.display = "none";
+      audio.play();
       clearInterval(intervalID);
       intervalID = null;
       isStarted = false;
@@ -53,6 +56,7 @@ stopStart.addEventListener("click", () => {
     progressBar.value = 0;
     updateTimerText();
     stopStart.textContent = "Start";
+    audio.pause();
     return;
   }
   isStarted = !isStarted;
