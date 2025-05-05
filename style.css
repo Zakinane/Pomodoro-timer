@@ -1,0 +1,123 @@
+:root {
+  --text: #e9e9e9;
+  --light-color-green: #599667;
+  --color-green: #50875c;
+  --dark-color-green: #497c54;
+  --light-color-red: #c15c5c;
+  --color-red: #ba4949;
+  --dark-color-red: #a74242;
+  --light-color-blue: #58799c;
+  --color-blue: #506e8e;
+  --dark-color-blue: #496683;
+}
+body {
+  overflow: hidden;
+  margin: 20px 0px;
+  height: max(475px,100%);
+  width: max(325px,100%);
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--color-green);
+  color: var(--text);
+
+  user-select: none;
+}
+
+/* ///////////////////////////////////////////////////////////////////////// Progress bar */
+progress {
+  accent-color: white;
+  width: 100%;
+
+  &::-moz-progress-bar {
+    background-color: white;
+  }
+  &::-webkit-progress-value {
+    background: white;
+  }
+}
+/* /////////////////////////////////////////////////////////////////////////////// Main */
+main {
+  margin-top: 30px;
+  background-color: var(--light-color-green);
+  border-radius: 5px;
+  padding: 15px 50px;
+}
+/* //////////////////////////////////////////////// Timer */
+.break-type-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.break-type {
+  &:hover {
+    cursor: pointer;
+  }
+  &.clicked {
+    background-color: var(--dark-color-green);
+  }
+}
+.timer {
+  justify-self: center;
+  font-size: 8em;
+}
+.pauseSkip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pause-start {
+  margin: 0px 1em;
+  font-size: 2em;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: var(--light-color-green);
+  background-color: var(--text);
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.skip {
+  width: 2em;
+  height: 2em;
+  font-size: 1em;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: var(--light-color-green);
+  background-color: var(--text);
+  &:hover {
+    cursor: pointer;
+  }
+}
+/* //////////////////////////////////////////////// Tasks */
+.tasks-title {
+  margin-top: 40px;
+}
+.tasks-container {
+  display: flex;
+  flex-direction: column;
+}
+.task {
+  width: 100%;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 15px auto 20px 15px;
+  gap: 5px;
+}
+.add-task-button {
+  display: flex;
+  justify-content: center;
+  background-color: var(--dark-color-green);
+  padding: 10px;
+  border-radius: 10px;
+  border: rgba(187, 187, 187, 0.469) dashed 2px;
+}
+.settings {
+  display: none;
+}
