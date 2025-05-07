@@ -22,7 +22,7 @@ function updateDisplay(t) {
 
   timer.textContent =
     String(minutes).padStart(2, "0") + ":" + String(secondes).padStart(2, "0"); // timer
-  document.title = "Timer : " + timer.textContent; // page title
+  document.title = timer.textContent; // page title
 
 }
 
