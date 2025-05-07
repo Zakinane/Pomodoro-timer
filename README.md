@@ -1,13 +1,13 @@
-# 🍅 Pomodoro-timer  
+# <img src="https://github.com/user-attachments/assets/c1ebeefd-4996-4a27-aa3b-544fbbbbbb1e" width="25" height="25" /> Pomodoro-timer  
 ## [🔗 Test the Alpha here](https://zakinane.github.io/Pomodoro-timer/)
-
-![[./img/sprite1.png]]
 
 A Pomodoro timer with a **pixel art** aesthetic, designed to help you focus and stay productive in a fun, customizable environment.
 
 ---
 
 ## 🚀 Features
+
+<img align="right" src="https://github.com/user-attachments/assets/d53e2931-5936-4837-b6f0-c0e236104ee6">
 
 - Follows the Pomodoro technique: 25 min work, 5 min short break, 20 min long break (all configurable)
 - Retro keypress sound effects
