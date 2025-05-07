@@ -1,6 +1,8 @@
 # 🍅 Pomodoro-timer  
 ## [🔗 Test the Alpha here](https://zakinane.github.io/Pomodoro-timer/)
 
+![[./img/sprite1.png]]
+
 A Pomodoro timer with a **pixel art** aesthetic, designed to help you focus and stay productive in a fun, customizable environment.
 
 ---
