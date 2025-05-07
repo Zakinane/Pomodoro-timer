@@ -2,7 +2,11 @@ let skip = document.querySelector(".skip");
 let stopStart = document.querySelector(".pause-start");
 let timer = document.querySelector(".timer");
 let progressBar = document.getElementById("progress-bar");
-let audio = new Audio("./audio/Reveil electronique.mp3");
+
+let reveilSound = new Audio("./audio/Reveil electronique.mp3");
+let startSound =  new Audio("./audio/start.wav")
+let pauseSound = new Audio("./audio/pause.wav")
+let finishSound = new Audio("./audio/finish.wav")
 
 let rawInput = parseInt(prompt("Durée en secondes (max 5999) :"));
 let duration = Math.min(rawInput, 5999);
@@ -42,12 +46,13 @@ function tick() {
     isStarted = false;
     stopStart.textContent = "Reset";
     skip.style.display = "none";
-    audio.play();
+    reveilSound.play();
   }
 }
 
 
 function startTimer() {
+  startSound.play()
   // restart after pause
   if (!timeStart) {
     timeStart = Date.now();
@@ -64,6 +69,7 @@ function pauseTimer() {
   clearInterval(intervalID);
   intervalID = null;
   timePaused = Date.now();
+  pauseSound.play();
 }
 
 function resetTimer() {
@@ -76,8 +82,8 @@ function resetTimer() {
   stopStart.textContent = "Start";
   skip.style.display = "flex";
   progressBar.style.width = "0%";
-  audio.pause();
-  audio.currentTime = 0; // restart beep beep from start
+  reveilSound.pause();
+  reveilSound.currentTime = 0; // restart beep beep from start
 
   rawInput = parseInt(prompt("Durée en secondes (max 5999) :"));
   duration = Math.min(rawInput, 5999);
