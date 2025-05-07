@@ -1,35 +1,33 @@
-# Pomodoro-timer
-## LINK : https://zakinane.github.io/Pomodoro-timer/
-En utilisant [[Electron]].
-Il aurait un style pixel art ! ça serait cool.
+# <img src="https://github.com/user-attachments/assets/c1ebeefd-4996-4a27-aa3b-544fbbbbbb1e" width="25" height="25" /> Pomodoro-timer  
+## [🔗 Test the Alpha here](https://zakinane.github.io/Pomodoro-timer/)
 
-### Fonctionnalités :
-#### Start :
-- 3 phases :
-	- **Pomodoro :** 25min normalement mais configurable
-	- **Pause courte :** 5min normalement /////
-	- **Pause longue :** 20min normalement //
-- Bouton pour faire pause sur le timer
-- Bruits de touches
-- Ajouter une liste de tasks à cocher (à chaque cycle)
-- Streak
-#### Paramètres :
-- Paramètres de style (vert, bleu, rouge...)
-- Mode no stop
--  Mode musique (ouvre des liens google musique en fonction du mode ex: concentration = mélodie, relax = chansons, entre deux = doux etc)
-		**Infos :** 
-			I used [https://www.npmjs.com/package/ytdl-core](https://www.npmjs.com/package/ytdl-core) for getting the audio source and stream. Then pass it to [https://www.npmjs.com/package/fluent-ffmpeg](https://www.npmjs.com/package/fluent-ffmpeg) to format it to mp3 and return the audio to my website. :)) It doesn't download anything, just streaming.
-			[ytmusic-api - npm](https://www.npmjs.com/package/ytmusic-api)
-- Stats (temps dans l'app, heures de travails, nombre de tâches accompli, musique écoutées etc)
-#### Autres :
+A Pomodoro timer with a **pixel art** aesthetic, designed to help you focus and stay productive in a fun, customizable environment.
 
-- Timer H24 affiché en haut de l'écran (basse opacité et option pour réduire)
-- Shortcuts 
-- Version mobile avec [[Apache Cordova|Cordova]]
+---
 
-#### Idées abstraites :
-- Relié à [[Obsidian]] (mes taches à faire)
+## 🚀 Features
 
+<img align="right" src="https://github.com/user-attachments/assets/d53e2931-5936-4837-b6f0-c0e236104ee6">
+
+- Follows the Pomodoro technique: 25 min work, 5 min short break, 20 min long break (all configurable)
+- Retro keypress sound effects
+- Task checklist to complete during each cycle
+- Streak system to keep you motivated
+- Theme customization (green, blue, red, etc.)
+- No-stop mode to automatically chain work and break phases
+- Music mode with suggested music based on focus level (calm, relaxed, balanced)
+- Music is streamed (not downloaded) using `ytdl-core`, `fluent-ffmpeg`, and `ytmusic-api`
+- Stats dashboard showing time spent, hours worked, tasks completed, music played
+- Keyboard shortcuts
+
+---
+
+## 🌱 Future Ideas
+
+- Integration with **Obsidian** to sync your to-do list and notes
+- Always-on-top 24/7 mini clock with adjustable opacity
+- Mobile version available (made with Apache Cordova)
+- Desktop version (built using Electron)
 
 
-Related : [[Pomodoro]], [[Mes sites]], [[Electron]]
+---
