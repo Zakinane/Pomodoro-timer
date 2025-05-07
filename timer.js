@@ -67,10 +67,6 @@ function pauseTimer() {
 }
 
 function resetTimer() {
-  rawInput = parseInt(prompt("Durée en secondes (max 5999) :"));
-  duration = Math.min(rawInput, 5999);
-  updateDisplay(duration);
-
   clearInterval(intervalID);
   intervalID = null;
   isStarted = false;
@@ -82,6 +78,10 @@ function resetTimer() {
   progressBar.style.width = "0%";
   audio.pause();
   audio.currentTime = 0; // restart beep beep from start
+
+  rawInput = parseInt(prompt("Durée en secondes (max 5999) :"));
+  duration = Math.min(rawInput, 5999);
+  updateDisplay(duration);
 }
 
 updateDisplay(duration);
