@@ -10,7 +10,7 @@ A Pomodoro timer with a **pixel art** aesthetic, designed to help you focus and 
 <img align="right" src="https://github.com/user-attachments/assets/d53e2931-5936-4837-b6f0-c0e236104ee6">
 
 - Follows the Pomodoro technique: 25 min work, 5 min short break, 20 min long break (all configurable)
-- Retro keypress sound effects
+- Sound effects
 - Task checklist to complete during each cycle
 - Streak system to keep you motivated
 - Theme customization (green, blue, red, etc.)
