@@ -17,17 +17,17 @@
     <main>
       <!-- Mettre le timer + la tomate qui bouge -->
       <div class="break-type-container">
-        <div onclick="openPomodoro()" class="break-type" id="pomodoro-button">
+        <div onclick="changeBreak('#ba4949','#a74242','#c15c5c')" class="break-type" id="pomodoro-button">
           Pomodoro
         </div>
         <div
-          onclick="openShortBreak()"
+          onclick="changeBreak('#50875c','#497c54','#599667')"
           class="break-type"
           id="shortBreak-button"
         >
           Short Break
         </div>
-        <div onclick="openLongBreak()" class="break-type" id="longBreak-button">
+        <div onclick="changeBreak('#506e8e','#496683','#58799c')" class="break-type" id="longBreak-button">
           Long Break
         </div>
       </div>
@@ -42,13 +42,7 @@
       <div class="tasks-title">Tasks :</div>
       <hr />
       <div class="tasks-container">
-        <div class="task">
-          <div>X</div>
-          <div>TESTING</div>
-          <div>2/3</div>
-          <div>|</div>
-        </div>
-        <div class="task">2</div>
+    
       </div>
       <div class="add-task-button">Add Task</div>
       <div class="tasks-counter">
@@ -58,6 +52,7 @@
   </body>
   <section class="settings"></section>
 
-  <script type="module" src="music.js"></script>
-  <script src="timer.js"></script>
+  <script src="./JS/breaks.js"></script>
+  <script src="./JS/addTask.js"></script>
+  <script src="./JS/timer.js"></script>
 </html>

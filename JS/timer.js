@@ -8,8 +8,14 @@ let startSound =  new Audio("./audio/start.wav")
 let pauseSound = new Audio("./audio/pause.wav")
 let finishSound = new Audio("./audio/finish.wav")
 
+reveilSound.volume = 0.3
+startSound.volume = 0.2
+pauseSound.volume = 0.2
+finishSound.volume = 0.2
+
 let rawInput = parseInt(prompt("Durée en secondes (max 5999) :"));
 let duration = Math.min(rawInput, 5999);
+
 let timeStart; // When the start is pressed
 let timePaused = 0; // timePaused = timeRestart - timePaus
 let timeLeft; // Date.now - timeStart 
@@ -19,6 +25,10 @@ progressBar.style.width = "0%";
 
 let isStarted = false;
 let intervalID = null;
+
+const pomodoroTime = 25 * 60;
+const shortBreakTime = 5 * 60;
+const longBreakTime = 20 * 60;
 
 function updateDisplay(t) {
   minutes = Math.floor(t / 60);
